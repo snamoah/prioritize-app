@@ -1,0 +1,8 @@
+<template name="atFormLayout">
+	<div class="layout master-layout {{$.Session.get 'sidebar'}}">
+		{{#momentum plugin='iron-router' options=momentumIRTransition}}
+			{{> yield }}
+		{{/momentum}}
+	</div>
+	{{> autoformModals}}
+</template>
