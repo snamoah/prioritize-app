@@ -3,7 +3,7 @@
 AccountsTemplates.configure
   
   # Behaviour
-  confirmPassword: false
+  confirmPassword: true
   enablePasswordChange: true
   forbidClientAccountCreation: false
   overrideLoginErrors: true

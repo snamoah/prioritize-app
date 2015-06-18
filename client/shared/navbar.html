@@ -9,12 +9,12 @@
 					<a href="{{pathFor 'profile'}}" class="xs-mobile-cta">
 						<i class="fa fa-user"></i>
 					</a>
-					<a class="navbar-brand" href="{{#if User}}{{Config.dashboardRoute}}{{else}}{{Config.homeRoute}}{{/if}}">{{{Config.logo}}}</a>
+					<a class="navbar-brand" href="{{#if User}}{{Config.dashboardRoute}}{{else}}{{Config.homeRoute}}{{/if}}"><img src="/img/logo_with_lettering.png" class="img-responsive" /></a>
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 					{{#if User}}
-						{{> notificationsDropdown}}
+						<!-- {{> notificationsDropdown}} -->
 						{{#if isInRole 'admin'}}
 						<li><a href="{{pathFor 'adminDashboard'}}">{{_ "admin"}}</a></li> 
 						{{/if}}
